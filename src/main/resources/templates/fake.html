@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Thank the author of enterxxx.xyz-->
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEST</title>
+    <link href="/css/all.css" rel="stylesheet">
+    <link href="/css/visitor.css" rel="stylesheet">
+<body>
+    <div id="id"></div>
+    <div id="name"></div>
+    <div id="set"></div>
+
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        let id = /*[[${studentId}]]*/'';
+        let name = /*[[${studentName}]]*/'';
+        let set = /*[[${studentSet}]]*/'';
+        let passTip = /*[[${passTip}]]*/'';
+        let type = /*[[${type}]]*/'';
+        /*]]>*/
+
+        document.getElementById("id").innerHTML = id;
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("set").innerHTML = set;
+    </script>
+</body>
+
+</html>
