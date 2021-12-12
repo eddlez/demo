@@ -116,7 +116,7 @@
 
 ## 如果需要替换域名
 
-目前仓库的证书文件 baidu.p12 () 中的 SAN (Subject Alternative Name) (使用者可选名称) 信息是
+目前仓库 [demo/src/main/resources/](https://github.com/eddlez/demo/tree/main/src/main/resources) 路径下的证书文件 baidu.p12 中的 SAN (Subject Alternative Name) (使用者可选名称) 信息是
 
 > localhost 
 > 127.0.0.1 
