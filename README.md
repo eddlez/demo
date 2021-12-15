@@ -99,7 +99,7 @@
 7. 安装 Virtual-Host，链接上面已贴出，安装完之后需要自己建一个文件，里面只写一行
 
    ``` 
-   127.0.0.1 baidu.com
+   127.0.0.1 .baidu.com
    ```
 
    建议放在比较容易找到的位置，比如 download 文件夹
@@ -119,7 +119,9 @@
 目前仓库 [demo/src/main/resources/](https://github.com/eddlez/demo/tree/main/src/main/resources) 路径下的证书文件 baidu.p12 中的 SAN (Subject Alternative Name) (使用者可选名称) 信息是
 
 > localhost 
+>
 > 127.0.0.1 
+>
 > *.baidu.com
 
 如果需要替换域名，比如打算拦截 google.com ，那么除了需要更改 Virtual-Host 的配置文件外，还需要重新签一份 SAN 信息包含 google.com 的证书，来替换目前仓库中的 baidu.p12 ，然后重新编译打包 jar 包
